@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://pa1.aminoapps.com/6905/80029bf11338d77f44495d09ed945bed5f7b1610r1-500-281_hq.gif');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#contador {
+    font-size: 86px;
+    color: #0077cc;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+#valorAposta {
+    font-size: 18px;
+    width: 100px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#botaoApostar, #botaoCancelar {
+    background-color: #0077cc;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#botaoCancelar {
+    background-color: #cc0000;
+    margin-left: 10px;
+}
+
+#botaoApostar:disabled, #botaoCancelar:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}

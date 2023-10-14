@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LéoBet | Só lucro!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>LéoBet | Só lucro!</h1>
+        <p>Insira o valor da aposta e clique no botão para iniciar a aposta ou no botão de cancelar a qualquer momento!</p>
+        <p>Saldo da Carteira: <span id="saldoCarteira">$10.00</span></p>
+        <p>Valor da Aposta: $<input type="text" id="valorAposta" value="10"> <button style="display: none;"
+                id="botaoSaldoAposta" onclick="depositarNaCarteira(10)">$10.00</button>
+
+        <br><br><span id="contador">1</span><br><br><br><br>
+        <img id="aviao" style="width: 100%; display: none;"
+            src="https://i.pinimg.com/originals/5a/65/ee/5a65ee278cd557143f05a4ba91abbfa8.gif">
+
+
+        <button id="botaoApostar" onclick="iniciarAposta()">Apostar</button>
+        <button id="botaoCancelar" onclick="cancelarAposta()" disabled>Cancelar $0.00</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
