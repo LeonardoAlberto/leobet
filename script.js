@@ -73,7 +73,7 @@ function cancelarAposta() {
     var valorApostaInput = document.getElementById("valorAposta");
     var valorAposta = parseFloat(valorApostaInput.value);
     var resultado = (valorAposta * contador).toFixed(2);
-    document.getElementById("botaoCancelar").textContent = "Cancelar $" + resultado;
+    document.getElementById("botaoCancelar").textContent = "Retirar $" + resultado;
 
     var message = "Parabéns, valor total ganho = $" + resultado;
     var messageElement = document.createElement("p");
@@ -103,14 +103,14 @@ function updateCount(valorAposta, valorApostaInput) {
         contador += increment;
         document.getElementById("contador").textContent = contador.toFixed(2);
         var resultado = (valorAposta * contador).toFixed(2);
-        document.getElementById("botaoCancelar").textContent = "Cancelar $" + resultado;
+        document.getElementById("botaoCancelar").textContent = "Retirar $" + resultado;
     } else {
         document.getElementById("contador").style.color = "red";
         document.getElementById("aviao").style.display = "none";
         document.getElementById("botaoApostar").disabled = false;
         document.getElementById("botaoCancelar").disabled = true;
         var resultado = (valorAposta * contador).toFixed(2);
-        document.getElementById("botaoCancelar").textContent = "Cancelar $" + resultado;
+        document.getElementById("botaoCancelar").textContent = "Retirar $" + resultado;
         clearInterval(intervalId);
 
 
